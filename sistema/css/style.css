@@ -1,0 +1,730 @@
+@import url(../fonts/GothamBook.css);
+@import url(../fonts/GothamBold.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #ededed;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'arial';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-family: 'arial';
+	letter-spacing: 2px;
+	font-size: 14px;
+	line-height: 20px;
+}
+a{
+	text-decoration: none;
+	font-family: arial;
+	letter-spacing: 1px;
+}
+span {
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+header{
+	position: fixed;
+	width: 100%;
+}
+.header{
+	color: #FFF;
+	background: #058167;
+	height: 35px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+    color: #FFF;
+    font-size: 11pt;
+    font-family: 'GothamBook';
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.close{
+	width: 25px;
+    height: 25px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 30px;
+}
+nav ul{
+	background: #018830;
+	/*background: #05817d;*/
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+nav ul > li a{
+	position: relative;
+}
+nav a{
+	color: #FFF;
+	display: block;
+	font-size: 10pt;
+	font-family: 'GothamBook';
+	padding: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background .5s;
+	border-right: 1px solid #319B8F;
+}
+nav .principal > a{
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-position: 94% center;
+    background-size: 10px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav li ul{
+	/*background: #177470;*/
+	background: #2d9872;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	align-items: flex-start;
+	border-radius: 0 0 10px 10px;
+}
+nav li ul a{
+	position: relative;
+	padding: 10px 30px;
+	border-right: initial;
+}
+nav li ul a:hover{
+	/*background: #2c9595;*/
+	background: #147556;
+}
+nav li ul li:last-child{
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+#container{
+	padding: 90px 15px 15px;
+}
+/*****************REGISTRO DE USUARIO*****************/
+
+.form_register{
+	width: 450px;
+	margin: auto;
+}
+.form_register h1{
+	color: #3c93b0;
+
+}
+hr{
+	border: 0;
+	background: #ccc;
+	height: 1px;
+	margin: 10px 0;
+	display: block;
+}
+form{
+	background: #fff;
+	margin: auto;
+	padding: 20px 50px;
+	border: 1px solid #d1d1d1;
+}
+label{
+	display: block;
+	font-size: 12pt;
+	font-family: GothamBook;
+	margin: 15px auto 5px auto;
+}
+input,select{
+	display: block;
+	width: 100%;
+	font-size: 11pt;
+	padding: 5px;
+	border: 1px solid #85929E;
+	border-radius: 5px;
+}
+.notItemOne option:first-child{
+	display: none;
+}
+.btn_save{
+	font-size: 12pt;
+	background: #124AC6;
+	padding: 10px;
+	color: #fff;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+	margin: 15px auto;
+}
+.alert{
+	width: 100%;
+	background: #66E05D66;
+	border-radius: 6px;
+	margin: 20px auto;
+	text-align: center;
+}
+.msg_error{
+	color: #ff0000;
+}
+.msg_save{
+	color: #126E00;
+}
+.alert {
+	padding: 10px;
+}
+
+/*****************LISTA DE USUARIOS*****************/
+
+#container h1{
+	font-size: 35px;
+	display: inline-block ;
+}
+.btn_new{
+	display: inline-block;
+	background: #29c394;
+	color: #fff;
+	padding: 5px 5px;
+	border-radius: 4px;
+	margin: 20px;
+}
+table{
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'arial';
+	width: 100%;
+}
+table th{
+	text-align: left;
+	padding: 10px;
+	background: #018830;
+	color: #fff;
+}
+table tr:nth-child(odd){
+	background: #fff;
+}
+table td{
+	padding: 10px;
+}
+.link_edit{
+	color: #0ca4ce;
+}
+.link_delete{
+	color: #ed0c0c;
+}
+.link_add{
+	color: #64b13c;
+}
+/*****************ELIMINAR USUARIO*****************/
+
+.data_delete{
+	text-align: center;
+}
+.data_delete h2{
+	font-size: 12pt;
+}
+.data_delete span{
+	font-weight: bold;
+	color: #4f72d4;
+	font-size: 12pt;
+}
+.btn_cancel{
+	width: 125px;
+	height: 45px;
+	background: #478ba2;
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+.btn_ok{
+	width: 125px;
+	height: 45px;
+	background: #f35c5c;
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+.btn_cancel{
+	background: #2eac15;
+}
+.btn_add{
+	width: 125px;
+	height: 45px;
+	background: #29c394;
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+.data_delete form{
+	background: initial;
+	margin: auto;
+	padding: 20px 50px;
+	border: 0;
+}
+/*****************PAGINADOR*****************/
+.paginador ul{
+	padding: 15px;
+	list-style: none;
+	background: #fff;
+	margin-top: 15px;
+	display: flex;
+	justify-content: flex-end;
+}
+.paginador a, .pageSelected{
+	color: #428bca;
+	border: 1px solid #ddd;
+	padding: 5px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 45px;
+}
+.paginador a:hover{
+	background: #ddd;
+}
+.pageSelected{
+	color: #fff;
+	background: #058167;
+	border: 1px solid #428bca;
+}
+/*****************BUSCADOR*****************/
+.form_search{
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+}
+.form_search .btn_search{
+	background: #3da88f;
+	color: #fff;
+	padding: 0 15px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;	
+}
+/*****************FOTO DEL PRODUCTO*****************/
+
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../images/uploads/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.upimg, .notBlock{
+	display: none !important;
+}
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.delPhoto{
+	color: #FFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10;
+}
+/*****************LISTA PRODUCTOS*****************/
+.img_producto img{
+	width: 60px;
+	height: auto;
+	margin: auto;
+}
+.imgProductoDelete{
+		width: 175px;
+}
+/***************** MODAL *****************/
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.81);
+	display: none;
+	
+}
+.bodyModal{
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal h1{
+	color: #00725D;
+	text-transform: uppercase;
+}
+.modal h2{
+	text-transform: uppercase;
+	margin: 25px;
+}
+#form_add_product, #form_del_product, #form_anular_factura{
+	width: 420px;
+	text-align: center;
+}
+/*============ Ventas ============*/
+.datos_cliente, .datos_venta, .title_page{
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#detalle_venta tr{
+	background-color: #FFF !important;
+}
+#detalle_venta td{
+	border-bottom: 1px solid #CCC;
+}
+.datos{
+	background-color: #e3ecef;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #78909C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.action_cliente{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.datos label{
+	margin: 5px auto;
+}
+.wd20{
+	width: 20%;
+}
+.wd25{
+	width: 25%;
+}
+.wd30{
+	width: 30%;
+}
+.wd40{
+	width: 40%;
+}
+.wd60{
+	width: 60%;
+}
+.wd100{
+	width: 100%;
+}
+#div_registro_cliente, #add_product_venta{
+	display: none;
+}
+.displayN{
+	display: none;
+}
+.tbl_venta{
+	max-width: 900px;
+	margin: auto;
+}
+.tbl_venta tfoot td{
+	font-weight: bold;
+}
+.textright{
+	text-align: right;
+}
+.textcenter{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+.btn_anular{
+	background-color: #f36a6a;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 3px;
+	color: #FFF;
+}
+/*lISTA VENTAS*/
+.form_search_date{
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 10px;
+	margin: 10px auto;
+}
+.form_search_date label{
+	margin: 0 10px;
+}
+.form_search_date input{
+	width: auto;
+}
+.form_search_date .btn_view{
+	padding: 8px;
+}
+.btn_view{
+	background-color: #3da88f;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 3px;
+	color: #fff;
+}
+.div_acciones{
+	display: flex;
+	justify-content: center;
+}
+.totalfactura{
+	display: flex;
+	justify-content: space-between;
+}
+.pagada, .anulada{
+	color: #fff;
+	background: #60a756;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 15px;
+}
+.anulada{
+	background: #f36a6a;
+}
+.inactive{
+	background-color: #A4A4A4;
+	color: #ccc;
+	cursor: default;
+}
+/*============ Inicio ============*/
+
+.container{
+	max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+}
+.container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.q, .m, .v {
+    margin-top: 20px;
+}
+
+.q h2, .m h2, .v h2 {
+    font-size: 20px;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.q p, .m p, .v p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+/*============ Panel de control ============*/
+.divContainer{
+	margin-bottom: 20px;
+}
+.titlePanelControl{
+	width: 100%;
+	background: #fff;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	font-size: 18pt !important;
+	color: #0A4661;
+}
+.dashboard{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: auto;
+}
+.dashboard a{
+	width: calc(100% / 5);
+	padding: 20px;
+	background-color: #fff;
+	font-size: 27pt;
+	text-align: center;
+	border-radius: 30px;
+}
+.dashboard p{
+	color: #3279A7;
+}
+.dashboard a span{
+	font-weight: bold;
+	font-size: 14pt;
+}
+.containerPerfil{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.containerDataUser, .containerDataEmpresa{
+	width: 500px;
+	background-color: #fff;
+	padding: 20px;
+}
+.logoUser, .logoEmpresa{
+	display: flex;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	padding: 25px;
+
+}
+.logoUser img, .logoEmpresa img{
+	width: 100%;
+	height: 100%;
+}
+.divDataUser{
+	padding: 10px;
+	margin: auto;
+}
+.divInfoSistema h4{
+	background: #3fd057;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.divDataUser > div{
+	display: flex;
+}
+.divDataUser label{
+	width: 150px;
+	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.divDataUser span{
+	padding: 5px;
+}
+.divInfoSistema form{
+	padding: 20px;
+}
+.divInfoSistema input{
+	margin-bottom: 10px;
+}
+.divInfoSistema button{
+	width: 100%;
+}
+.alertChangePass{
+	text-align: center;
+	font-weight: bold;
+}

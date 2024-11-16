@@ -1,0 +1,59 @@
+{
+    "neutraface2text-bold": {
+        "normal": "a2e921dff94f8b7bcd4a4d136ca53057"
+    },
+    "neutraface2text-book": {
+        "normal": "c10bba80c3fd293cab3ec58f0c28eb1a"
+    },
+    "gothambook": {
+        "normal": "ebe67e16ec2f359b9959eee6e6c62d37"
+    },
+    "gothambold": {
+        "normal": "b52179c828539e16b3c206bcad34350a"
+    },
+    "gothamhtf": {
+        "normal": "e5a94d4a1b58c068231b864122c2e27d"
+    },
+    "gothamhtf-thin": {
+        "normal": "e5a94d4a1b58c068231b864122c2e27d"
+    },
+    "gothamhtf-light": {
+        "normal": "05cab0c146ff999cf3774f42b9bde392"
+    },
+    "gothamhtf-medium": {
+        "normal": "a4a646e737218ff7cac24761c7785855"
+    },
+    "gothamhtf-black": {
+        "normal": "187e1c8dbcd0c5a1df17bc8e407513fd"
+    },
+    "gothamhtf-ultra": {
+        "normal": "48fb4a19f5a3c28f8c6291198f854fcf"
+    },
+    "antonio-regular": {
+        "normal": "e7f74b87d8176a4ab56cf0db2a91f020"
+    },
+    "museoslab-300": {
+        "normal": "c2d817b951e195b66ab7926e9d063f40"
+    },
+    "museoslab-900": {
+        "normal": "a630ed3a1f78bbd8cdc27539b7d47fa6"
+    },
+    "cubano-regular": {
+        "normal": "9b6db090594de201691aeaf6af88b4f2"
+    },
+    "brixsansblack": {
+        "normal": "brixsansblack_normal_88a41faaff26d52926aa7a12085c1f77"
+    },
+    "brixsansextralight": {
+        "normal": "75a3edd33fcb943a4b090b67a5ab3828"
+    },
+    "brixsansmedium": {
+        "normal": "12107c832b1c9d58fa2e1052627cdc34"
+    },
+    "brixsansregular": {
+        "normal": "brixsansregular_normal_fbcfe488c3f03eadf6a330c6c2c0199d"
+    },
+    "kabrio": {
+        "normal": "3a9b3a999b7b1136c02cfca3739fddd0"
+    }
+}
